@@ -1,0 +1,30 @@
+.Header {
+    &-Content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      // Vertically centers items
+        justify-content: center;   // Horizontally centers items
+    }
+
+    &-Logo {
+        width: 100%;
+    }
+
+    &-Title {
+        font-size: 58px;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: #FFFF;
+        font-family: Philosopher;
+    }
+
+    &-Date, &-DaysLeft {
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &-Date {
+        margin-bottom: 0;
+    }
+}
