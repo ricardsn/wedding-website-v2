@@ -1,1 +1,9 @@
 $color-background: #173A2C;
+$color-second: #9B7B52;
+
+
+@mixin mobile($max-width: 768px) {
+    @media (max-width: $max-width) {
+      @content;
+    }
+}

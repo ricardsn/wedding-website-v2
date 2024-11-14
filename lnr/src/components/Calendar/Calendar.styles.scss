@@ -1,0 +1,64 @@
+@import '../../styles/font';
+@import '../../styles/variables';
+
+/* Basic styling for the calendar */
+.calendar {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+
+    @include mobile {
+        width: unset;
+        max-width: 300px;
+    }
+  }
+  
+  .calendar h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 columns for the 7 days of the week */
+    gap: 10px;
+  }
+  
+  .calendar-day-header {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .calendar-day, .calendar-day-empty {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .calendar-day-empty {
+    visibility: hidden; /* These cells are placeholders and should be invisible */
+  }
+  
+  .calendar-day--marked {
+    position: relative;
+    font-weight: bold;
+    color: red;
+  }
+  
+  .calendar-day--marked {
+    position: relative;
+    background-image: url('./images/heart.svg'); /* Replace with path or inline SVG data URL */
+    background-size: 45px 45px;
+    background-position: -3px 4px;
+    background-repeat: no-repeat;
+}
+  

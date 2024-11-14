@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 import lv from './locales/lv.json';
 import ru from './locales/ru.json';
+import en from './locales/en.json';
 
 i18n
   .use(initReactI18next) // Passes i18n instance to react-i18next.
@@ -11,6 +12,7 @@ i18n
     resources: {
       lv: { translation: lv },
       ru: { translation: ru },
+      en: { translation: en },
     },
     lng: 'lv', // Default language
     fallbackLng: 'lv', // Fallback language if translation is missing

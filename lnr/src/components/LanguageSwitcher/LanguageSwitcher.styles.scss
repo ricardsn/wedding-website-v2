@@ -1,0 +1,28 @@
+@import '../../styles/font';
+@import '../../styles/variables';
+
+.LanguageSwitcher-Content {
+    position: absolute;         /* Makes it sticky */
+    top: 0;                 /* Centers it vertically */
+    left: 0;                  /* Aligns it to the left side of the screen */
+    display: flex;
+    gap: 10px;                /* Adds space between buttons */
+    padding: 10px;            /* Optional padding */
+}
+
+.LanguageSwitcher-Button {
+    width: 50px;              /* Sets square width */
+    height: 50px;             /* Sets square height */
+    display: flex;
+    align-items: center;      /* Centers text vertically */
+    justify-content: center;  /* Centers text horizontally */
+    font-size: 14px;          /* Adjust font size as needed */
+    background-color: $color-background;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    &:hover {
+        background-color: $color-second;
+    }
+}

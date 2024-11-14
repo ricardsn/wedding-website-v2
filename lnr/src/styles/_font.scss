@@ -5,8 +5,10 @@
 //     font-style: normal;
 //     color: #FFFF;
 //   }
-@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
-  
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Doto:wght@100..900&family=Gilda+Display&family=Quicksand:wght@300..700&display=swap');
   // Define font family variables
-  $font-primary: "Gilda Display", serif;
+  $font-primary: "Quicksand", sans-serif;
+  $font-moul: "Moul", serif;
+  $font-dancing-script: "Dancing Script", cursive;
   $font-title: Philosopher;
+  $font-doto: "Doto", sans-serif;
