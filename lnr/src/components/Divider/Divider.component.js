@@ -5,7 +5,7 @@ const Divider = () => {
   return (
     <div className="divider scroll-animation">
       <div className="dotted-line"></div>
-      <span className="heart">❤</span>
+      <span className="heart">♥︎</span>
       <div className="dotted-line"></div>
     </div>
   );
