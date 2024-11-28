@@ -1,10 +1,10 @@
 @import '../../styles/font';
 @import '../../styles/variables';
 
-
 .Header {
     display: flex;
     align-items: start;
+    height: 100vh;
 
     @include mobile {
         align-items: center;
@@ -21,7 +21,7 @@
 
     &-Logo {
         max-width: 100%;
-        overflow-x: hidden;
+        overflow: hidden;
         margin-top: -50px;
 
         img {

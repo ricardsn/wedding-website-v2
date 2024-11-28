@@ -3,62 +3,66 @@
 
 /* Basic styling for the calendar */
 .calendar {
-    width: 300px;
+    width: 400px;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Arial', sans-serif;
+    font-family: $font-primary;
+    color: #FFFF;
 
     @include mobile {
         width: unset;
-        max-width: 300px;
     }
+
+    .calendar-title {
+        margin-bottom: 10px;
+        font-size: 24px;
+        font-weight: 300!important;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-family: $font-primary;
+        text-align: center;
+    }
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); /* 7 columns for the 7 days of the week */
+        gap: 10px;
+    
+        @include mobile {
+            gap: unset;
+        } 
+    }
+
+    &-day {
+        &-header {
+            font-size: 14px;
+            font-weight: bold;
+            color: #797777;
+       }
+
+       &-empty {
+        visibility: hidden; /* These cells are placeholders and should be invisible */
+      }
+
+      &--marked {
+        position: relative;
+        font-weight: bold;
+        color: #FFFF;
+        position: relative;
+        background-image: url('./images/heart.svg'); /* Replace with path or inline SVG data URL */
+        background-size: 45px 45px;
+        background-position: -3px 4px;
+        background-repeat: no-repeat;
+      }
+    }
+
+    &-day, &-day-empty {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+      }    
   }
-  
-  .calendar h2 {
-    margin-bottom: 10px;
-    font-size: 24px;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 columns for the 7 days of the week */
-    gap: 10px;
-  }
-  
-  .calendar-day-header {
-    font-size: 14px;
-    font-weight: bold;
-    color: #444;
-  }
-  
-  .calendar-day, .calendar-day-empty {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .calendar-day-empty {
-    visibility: hidden; /* These cells are placeholders and should be invisible */
-  }
-  
-  .calendar-day--marked {
-    position: relative;
-    font-weight: bold;
-    color: red;
-  }
-  
-  .calendar-day--marked {
-    position: relative;
-    background-image: url('./images/heart.svg'); /* Replace with path or inline SVG data URL */
-    background-size: 45px 45px;
-    background-position: -3px 4px;
-    background-repeat: no-repeat;
-}
-  

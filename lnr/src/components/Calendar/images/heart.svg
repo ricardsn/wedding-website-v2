@@ -1,4 +1,4 @@
 <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
   <path d="M18 3 C 12 -2 3 2 3 9 C 3 13 7 18 18 28 C 29 18 33 13 33 9 C 33 2 24 -2 18 3 Z" 
-        fill="none" stroke="red" stroke-width="2" stroke-dasharray="4, 2"/>
+        fill="none" stroke="#FFFF" stroke-width="2" stroke-dasharray="4, 2"/>
 </svg>

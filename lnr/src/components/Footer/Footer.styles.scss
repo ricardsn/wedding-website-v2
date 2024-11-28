@@ -1,0 +1,18 @@
+@import '../../styles/font';
+@import '../../styles/variables';
+
+.Footer {
+    &-Content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &-Title {
+        font-size: 58px;
+        padding: 0 40px 16px;
+        margin-bottom: 0;
+        font-family: $font-dancing-script;
+        border-bottom: 1px solid white;
+    }
+}

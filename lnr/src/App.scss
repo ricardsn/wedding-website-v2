@@ -1,11 +1,11 @@
 @import './styles/font';
 @import './styles/variables';
 
-.Wedding {
+html {
     background-color: $color-background;
     padding: 0 15px;
 
-    p {
+    p, h1 {
         font-family: $font-primary;
         color: #FFFF;
     }
