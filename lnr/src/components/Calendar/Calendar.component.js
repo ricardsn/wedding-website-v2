@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 function Calendar() {
   const { t } = useTranslation();
   // Days of the week in English
-  const daysOfWeek = [t('P.'), t('O.'), t('T.'), t('C.'), t('Pk.'), t('S.'), t('SV.')];
+  const daysOfWeek = [t('Mon.'), t('Tue.'), t('Wed.'), t('Thur.'), t('Fri.'), t('Sat.'), t('Sun.')];
   const daysInMonth = 31; // January has 31 days
   const markedDate = 25;  // Mark the 25th
 
@@ -14,8 +14,8 @@ function Calendar() {
   const days = Array.from({ length: daysInMonth }, (_, index) => index + 1);
 
   return (
-    <div className="calendar">
-      <p className="calendar-title">{ t('Janvāris') }</p>
+    <div className="calendar scroll-animation">
+      <p className="calendar-title">{ t('January') }</p>
       <div className="calendar-grid">
         {daysOfWeek.map((day, index) => (
           <div key={index} className="calendar-day-header">

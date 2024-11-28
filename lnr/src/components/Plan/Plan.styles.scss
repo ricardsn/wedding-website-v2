@@ -33,6 +33,7 @@
             margin-top: 0;
             align-self: flex-start; // Override align-items for the first child
             font-size: 30px;
+            white-space: nowrap;
             // font-weight: bold;
 
             &::before {

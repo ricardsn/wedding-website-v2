@@ -6,7 +6,7 @@ function Welcome() {
     const { t } = useTranslation();
 
     return (
-        <div className="Welcome">
+        <div className="Welcome scroll-animation">
             <p className='Welcome-Heading'>{ t('WelcomeHeading') }</p>
             <p className='Welcome-Text'>{ t('Welcome') }</p>
             <Calendar />
